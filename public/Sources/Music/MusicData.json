@@ -1,0 +1,99 @@
+{
+    "FeaturedVideos": [
+      {
+        "Name": "Music 1",
+        "Followers": "No copy rights",
+        "duration": "3.45"
+      },
+      {
+        "Name": "Music 2",
+        "Followers": "No copy rights",
+        "duration": "4.45"
+      },
+      {
+        "Name": "Music 3",
+        "Followers": "No copy rights",
+        "duration": "2.45"
+      },
+      {
+        "Name": "Music 4",
+        "Followers": "No copy rights",
+        "duration": "3.15"
+      },
+      {
+        "Name": "Music 5",
+        "Followers": "No copy rights",
+        "duration": "2.95"
+      },
+      {
+        "Name": "Sonu Nigam",
+        "Followers": "60k",
+        "duration": "2.55"
+      },
+      {
+        "Name": "Anirudh Ravichander",
+        "Followers": "70k",
+        "duration": "3.15"
+      },
+      {
+        "Name": "S. P. Balasubrahmanyam",
+        "Followers": "80k",
+        "duration": "4.47"
+      },
+      {
+        "Name": "Priyanka",
+        "Followers": "90k",
+        "duration": "4.01"
+      },
+      {
+        "Name": "M. Srisha",
+        "Followers": "1M",
+        "duration": "3.04"
+      },
+      {
+        "Name": "A. R. Rahman",
+        "Followers": "10k",
+        "duration": "3.45"
+      },
+      {
+        "Name": "Shreya Ghoshal",
+        "Followers": "20k",
+        "duration": "4.45"
+      },
+      {
+        "Name": "Udit Narayan",
+        "Followers": "30k",
+        "duration": "2.45"
+      },
+      {
+        "Name": "Kumar Sanu",
+        "Followers": "40k",
+        "duration": "3.15"
+      },
+      {
+        "Name": "Devi Sri Prasad",
+        "Followers": "50k",
+        "duration": "2.95"
+      },
+      {
+        "Name": "Sonu Nigam",
+        "Followers": "60k",
+        "duration": "2.55"
+      },
+      {
+        "Name": "Anirudh Ravichander",
+        "Followers": "70k",
+        "duration": "3.15"
+      },
+      {
+        "Name": "S. P. Balasubrahmanyam",
+        "Followers": "80k",
+        "duration": "4.47"
+      },
+      {
+        "Name": "Priyanka",
+        "Followers": "90k",
+        "duration": "4.01"
+      }  
+    ]
+}

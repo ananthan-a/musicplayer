@@ -1,0 +1,215 @@
+{
+  "FeaturedVideos": [
+    {
+      "Name" : "Jim Yosef & Anna Yvette",
+      "Discription" : "Courage [NCS Release]",
+      "YTLink" : "https://www.youtube.com/watch?v=QmzWdrvFKdM&list=PLztdDPUXLHxunWjAr3HcRkguE_V8DqTLD?showinfo=0&enablejsapi=1&origin=http://localhost:9000"
+    },
+    {
+      "Name" : "Tobu",
+      "Discription" : "Floating (Krewella's Alive vocal) [NCS Fanmade]",
+      "YTLink" : "https://www.youtube.com/watch?v=7-Kbj5Aj1zQ?showinfo=0&enablejsapi=1&origin=http://localhost:9000'"
+    },
+    {
+      "Name" : "Elektronomia X Alan Walker",
+      "Discription" : "Fire ~ Spectre (MASHUP By BlazingKing)",
+      "YTLink" : "https://www.youtube.com/watch?v=5qLhpT4ls7w?showinfo=0&enablejsapi=1&origin=http://localhost:9000"
+    },
+    {
+      "Name" : "Jim Yosef",
+      "Discription" : "Link [NCS Release]",
+      "YTLink" : "https://www.youtube.com/watch?v=9iHM6X6uUH8?showinfo=0&enablejsapi=1&origin=http://localhost:9000"
+    },
+    {
+      "Name" : "Lost Sky",
+      "Discription" : "Fearless Pt.2 *SLOWED AND BASS BOOSTED*",
+      "YTLink" : "https://www.youtube.com/watch?v=IhBiymSD6w0?showinfo=0&enablejsapi=1&origin=http://localhost:9000"
+    },
+    {
+      "Name" : "Lostboy & Slashtaq",
+      "Discription" : "Elysium [NCS Release]",
+      "YTLink" : "https://www.youtube.com/watch?v=QmzWdrvFKdM&list=PLztdDPUXLHxunWjAr3HcRkguE_V8DqTLD?showinfo=0&enablejsapi=1&origin=http://localhost:9000"
+    },
+    {
+      "Name" : "Illenium",
+      "Discription" : "Fractures (feat. Nevve)",
+      "YTLink" : "https://www.youtube.com/watch?v=ZCu2gwLj9ok&list=PLztdDPUXLHxunWjAr3HcRkguE_V8DqTLD?showinfo=0&enablejsapi=1&origin=http://localhost:9000"
+    },
+    {
+      "Name" : "Illenium",
+      "Discription" : "Reverie (feat. King Deco)",
+      "YTLink" : "https://www.youtube.com/watch?v=tjg3-Wla3PU&list=PLztdDPUXLHxunWjAr3HcRkguE_V8DqTLD?showinfo=0&enablejsapi=1&origin=http://localhost:9000"
+    },
+    {
+      "Name" : "Illenium",
+      "Discription" : "Fractures (feat. Nevve) (Trivecta Remix)",
+      "YTLink" : "https://www.youtube.com/watch?v=R8_dpn5C-Jg&list=PLztdDPUXLHxunWjAr3HcRkguE_V8DqTLD?showinfo=0&enablejsapi=1&origin=http://localhost:9000"
+    },
+    {
+      "Name" : "Illenium",
+      "Discription" : "Reverie (feat. King Deco)",
+      "YTLink" : "https://www.youtube.com/watch?v=tjg3-Wla3PU&list=PLztdDPUXLHxunWjAr3HcRkguE_V8DqTLD?showinfo=0&enablejsapi=1&origin=http://localhost:9000"
+    }
+  ],
+  "FeaturedMusics" : [
+    {
+      "id" : "1",
+      "Name" : "Music 1",
+      "Discription" : " Discription of Music 1",
+      "img" : "Sources/Images/FeaturedMusic/Music1.png",
+      "Alt" : "Music1",
+      "Link" : "Sources/Music/FeaturedMusic/Music1.mp3"
+    },
+    {
+      "id" : "2",
+      "Name" : "Music 2",
+      "Discription" : " Discription of Music 2",
+      "img" : "Sources/Images/FeaturedMusic/Music2.png",
+      "Alt" : "Music2",
+      "Link" : "Sources/Music/FeaturedMusic/Music2.mp3"
+    },
+    {
+      "id" : "3",
+      "Name" : "Music 3",
+      "Discription" : " Discription of Music 3",
+      "img" : "Sources/Images/FeaturedMusic/Music3.png",
+      "Alt" : "Music3",
+      "Link" : "Sources/Music/FeaturedMusic/Music3.mp3"
+    },
+    {
+      "id" : "4",
+      "Name" : "Music 4",
+      "Discription" : " Discription of Music 4",
+      "img" : "Sources/Images/FeaturedMusic/Music4.png",
+      "Alt" : "Music4",
+      "Link" : "Sources/Music/FeaturedMusic/Music4.mp3"
+    },
+    {
+      "id" : "5",
+      "Name" : "Music 5",
+      "Discription" : " Discription of Music 5",
+      "img" : "Sources/Images/FeaturedMusic/Music5.png",
+      "Alt" : "Music5",
+      "Link" : "Sources/Music/FeaturedMusic/Music5.mp3"
+    },
+    {
+      "id" : "6",
+      "Name" : "Music 6",
+      "Discription" : " Discription of Music 6",
+      "img" : "Sources/Images/FeaturedMusic/Music6.png",
+      "Alt" : "Music6",
+      "Link" : "Sources/Music/FeaturedMusic/Music1.mp3"
+    },
+    {
+      "id" : "7",
+      "Name" : "Music 7",
+      "Discription" : " Discription of Music 7",
+      "img" : "Sources/Images/FeaturedMusic/Music7.png",
+      "Alt" : "Music7",
+      "Link" : "Sources/Music/FeaturedMusic/Music2.mp3"
+    },
+    {
+      "id" : "8",
+      "Name" : "Music 8",
+      "Discription" : " Discription of Music 8",
+      "img" : "Sources/Images/FeaturedMusic/Music8.png",
+      "Alt" : "Music8",
+      "Link" : "Sources/Music/FeaturedMusic/Music3.mp3"
+    },
+    {
+      "id" : "9",
+      "Name" : "Music 9",
+      "Discription" : " Discription of Music 9",
+      "img" : "Sources/Images/FeaturedMusic/Music9.png",
+      "Alt" : "Music9",
+      "Link" : "Sources/Music/FeaturedMusic/Music4.mp3"
+    },
+    {
+      "id" : "10",
+      "Name" : "Music 10",
+      "Discription" : " Discription of Music 10",
+      "img" : "Sources/Images/FeaturedMusic/Music10.png",
+      "Alt" : "Music10",
+      "Link" : "Sources/Music/FeaturedMusic/Music5.mp3"
+    }
+  ],
+  "PopularArtists": [
+    {
+      "Name": "A. R. Rahman",
+      "Followers": "10k"
+    },
+    {
+      "Name": "Shreya Ghoshal",
+      "Followers": "20k"
+    },
+    {
+      "Name": "Udit Narayan",
+      "Followers": "30k"
+    },
+    {
+      "Name": "Kumar Sanu",
+      "Followers": "40k"
+    },
+    {
+      "Name": "Devi Sri Prasad",
+      "Followers": "50k"
+    },
+    {
+      "Name": "Sonu Nigam",
+      "Followers": "60k"
+    },
+    {
+      "Name": "Anirudh Ravichander",
+      "Followers": "70k"
+    },
+    {
+      "Name": "S. P. Balasubrahmanyam",
+      "Followers": "80k"
+    },
+    {
+      "Name": "Priyanka",
+      "Followers": "90k"
+    },
+    {
+      "Name": "M. Srisha",
+      "Followers": "1M"
+    },
+    {
+      "Name": "A. R. Rahman",
+      "Followers": "10k",
+      "Icon": "./Icon/PopularAlbumIcon.png"
+    },
+    {
+      "Name": "Shreya Ghoshal",
+      "Followers": "20k"
+    },
+    {
+      "Name": "Udit Narayan",
+      "Followers": "30k"
+    },
+    {
+      "Name": "Kumar Sanu",
+      "Followers": "40k"
+    },
+    {
+      "Name": "Devi Sri Prasad",
+      "Followers": "50k"
+    },
+    {
+      "Name": "Sonu Nigam",
+      "Followers": "60k"
+    },
+    {
+      "Name": "Anirudh Ravichander",
+      "Followers": "70k"
+    },
+    {
+      "Name": "S. P. Balasubrahmanyam",
+      "Followers": "80k"
+    },
+    {
+      "Name": "Priyanka",
+      "Followers": "90k"
+    }  
+  ]   
+}

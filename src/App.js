@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import LeftRow  from './LeftRow/LeftRow';
+import Content from './Content/Content';
+import SongPlayer   from './SongPlayer/SongPlayer'
+import { ThemeProvider } from "styled-components";
+import { lightTheme, darkTheme, GlobalStyles } from "./Additional/Theme";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export default function App(props) {
+    const [CurrentMusic, SetCurrentMusic] = useState("No Music");
+    const [CurrentContent, SetCurrentContent] = useState("Videos");
+    const [CurrentTheme, SetCurrentTheme] = useState("light");
+    const MyTheme  = CurrentTheme === "dark" ? "dark" : "light";
+    return (
+    <ThemeProvider theme={MyTheme === "dark" ? darkTheme : lightTheme}>
+        <GlobalStyles />
+        <LeftRow Theme={MyTheme} SetCurrentContent={SetCurrentContent}/>
+        <Content Theme={MyTheme} SetCurrentMusic={SetCurrentMusic} CurrentContent={CurrentContent} SetCurrentTheme={SetCurrentTheme}/>
+        <SongPlayer Theme={MyTheme} CurrentMusic={CurrentMusic} SetCurrentMusic={SetCurrentMusic}/>
+    </ThemeProvider>
+    );
 }
-
-export default App;

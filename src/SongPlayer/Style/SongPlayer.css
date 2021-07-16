@@ -1,0 +1,134 @@
+.FooterTable{
+    width: 100%;
+}
+.FooterTableIcon{
+    width: 5%;
+}
+.FooterTableIconAlbum{
+    width: 7%;
+}
+.FooterTableMusicName{
+    width: 10%;
+}
+.FooterSongDiscription{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 23px;
+    letter-spacing: -0.3px;
+    color: #596675;
+}
+.FooterTableSlider{
+    width: 30%;
+    margin-left: auto;
+    margin-bottom: auto;
+}
+.FooterTableRangeGap{
+    width: 1%;
+}
+.FooterLeftIcon{
+    width: 45px;
+    opacity: 0.7;
+    display: block;
+    margin: auto auto;
+}
+.FooterLeftIconNEW{
+    width: 45px;
+    opacity: 0.7;
+    display: block;
+    margin: auto auto;
+}
+.FooterRightIcon{
+    width: 23px;
+    opacity: 0.7;
+    display: block;
+    margin: auto auto;
+}
+.FooterAlbumIconPlaying{
+    width:70px;
+    height:70px;
+    object-fit:cover;
+    border-radius: 50%;
+    margin-left: 15px;
+    animation: mymove 5s infinite;
+}
+@keyframes mymove {
+    100% {transform: rotate(360deg);}
+  }
+.FooterAlbumIconNotPlaying{
+    width:70px;
+    height:70px;
+    object-fit:cover;
+    border-radius: 50%;
+    margin-left: 15px;
+}
+.FooterTableTime{
+    width: 5%;
+    text-align: center;
+}
+.RangeInput{
+    width: 100%;
+    
+}
+.FooterTablePlayer{
+    width: 63%;
+    background-color: rosybrown;
+}
+
+
+
+.app-container {
+    width: 100%;
+    padding: 10 10px;
+    background-color: #272727;
+  }
+  
+  /*Button*/
+  .btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5%;
+    background-color: saddlebrown;
+  }
+  
+  .btn-play {
+    /* width: 0;
+    height: 0; */
+    width: 5%;
+    background-color: saddlebrown;
+    border-style: solid;
+    border-width: 20px 0 20px 30px;
+    border-color: transparent transparent transparent #ffffff;
+    cursor: pointer;
+  }
+  
+  .btn-stop {
+    height: 40px;
+    width: 5%;
+    border-left: 10px solid rgb(255, 255, 255);
+    border-right: 10px solid rgb(255, 255, 255);
+    cursor: pointer;
+  }
+  
+  .control-panel {
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .timer {
+    width: 5%;
+    background-color: sandybrown;
+    font-size: 10px;
+    font-weight: 200;
+    color: rgb(196, 196, 196);
+  }
+
+  
+/*
+table, th, td {
+    border: 1px solid white;
+  }
+  */

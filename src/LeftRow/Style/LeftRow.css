@@ -1,0 +1,77 @@
+.Logo{
+    position: absolute;
+    left: 13.37%;
+    right: 21.8%;
+    top: 5.22%;
+    bottom: 85.23%;
+}
+.LogoIcon{
+    width: 60px;
+    float: left;
+}
+.LogoText{
+    float: left;
+    padding-left: 10px;
+}
+.AppUiKit{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 23px;
+    letter-spacing: -0.3px;
+    color: #596675;
+}
+.LeftMenu{
+    position: absolute;
+    left: 13.37%;
+    right: 0.33%;
+    top: 19.60%;
+    bottom: 9.60%;
+    overflow: auto;
+}
+.LeftMenu::-webkit-scrollbar {
+    display: none;
+}
+.LeftMenuTable{
+    width: 90%;
+}
+.LeftSideText{
+    /*position: absolute;*/
+    height: 26px;
+    width: 65%;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight:normal;
+    font-size: 14px;
+    line-height: 23px;
+    letter-spacing: -0.3px;  
+    color: #121B25;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+.LeftSideTextPlayist{
+    height: 20px;
+    width: 65%;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight:normal;
+    font-size: 14px;
+    letter-spacing: -0.3px;  
+    color: #596675;
+    padding-bottom: 5px;
+    padding-left: 10px;
+}
+.LeftSideIcon{
+    height: auto;
+    width: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.LeftSideIconRight{
+    width: 20px;
+    opacity: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}

@@ -1,0 +1,189 @@
+.TopMenu{
+    position: absolute;
+    left: 4.38%;
+    right: 4.38%;
+    top: 5.22%;
+    height: auto;
+}
+.TopMenuTable{
+    width: 100%;
+}
+.TopMenuTableIcon{
+    width: 5%;
+}
+.TopMenuTableSearch{
+    width: 80%;  
+}
+.TopMenuIcon{
+    width: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.TopMenuSearch{
+    width: 100%;
+    border-radius: 20px;
+    border-width: 0px;
+    background-color:transparent;
+}
+.FeaturedVideos{
+    position: absolute;
+    left: 4.38%;
+    right: 33.74%;
+    top: 14.77%;
+    bottom: 3.39%;
+}
+.FeaturedVideosTable{
+    position: absolute;
+    width: 100%;
+    top: 0%;
+    bottom: 90%;
+    left: 0%;
+    right: 0%;
+}
+.FeaturedVideosTableHeading{
+    width: 80%;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 33px;
+    letter-spacing: -0.375px;
+    padding-left: 20px;
+}
+.FeaturedVideosTableMore{
+    width: 20%;
+    text-align: right;
+    padding-right: 20px;
+}
+.VideoList{
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    top: 10%;
+    overflow-x: none;
+    overflow-y: auto;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.VideoList::-webkit-scrollbar {
+    display: none;
+}
+.GridView{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    min-width: 300px;
+    min-height: auto;
+    width: 85%;
+}
+
+.VideoIcon{
+    width: 10px;
+}
+.FeaturedVideoName{
+    text-align: left;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: -0.3px;
+}
+.FeaturedVideoArtist{
+    text-align: left;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 23px;
+    letter-spacing: -0.3px;
+    color: #596675;
+}
+.PopularArtists{
+    position: absolute;
+    left: 70.63%;
+    right: 4.38%;
+    top: 14.77%;
+    bottom: 7.01%;
+}
+.PopularArtists1{
+    position: absolute;
+    top: 0%;
+    bottom: 90%;
+    left: 0%;
+    right: 0%;
+}
+.PopularArtists2{
+    position: absolute;
+    top: 10%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    overflow: auto;
+}
+.PopularArtists2::-webkit-scrollbar {
+    display: none;
+}
+.PopularArtistsTable1{
+    width: 100%;
+    height: auto;
+}
+.PopularArtistsTable1_1{
+    width: 60%;
+    height: 50px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 33px;
+    letter-spacing: -0.375px;
+}
+.PopularArtistsTable1_2{
+    width: 40%;
+    height: 35px;
+    text-align: right;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 23px;
+    letter-spacing: -0.3px;
+    color: #596675;
+}
+.PopularArtistsTable2{
+    width: 100%;
+}
+.PopularArtistsTable2_1, .PopularArtistsTable2_3{
+    width: 20%;
+    text-align: center;
+}
+.PopularArtistsTable2_2{
+    width: 60%;
+    height: 45px;
+    text-align: left;
+    font-family: Poppins;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.PopularArtistsTable2_1_Icon{
+    width: 45px;
+    border-radius: 50%;
+}
+.PopularArtistsTable2_2_1{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 23px;
+    letter-spacing: -0.2625px;
+}
+.PopularArtistsTable2_2_2{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 19px;
+    letter-spacing: -0.257143px;
+    color: #596675;
+}
