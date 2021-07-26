@@ -14,7 +14,7 @@ export default function PopularArtists(){
             <div className="PopularArtists1">
                 <table className="PopularArtistsTable1">
                     <tr>
-                        <td className="PopularArtistsTable1_1"><RightsideText>Popular Artistss</RightsideText></td>
+                        <td className="PopularArtistsTable1_1"><RightsideText>Popular Artists</RightsideText></td>
                         <td className="PopularArtistsTable1_2">show more</td>
                     </tr>
                 </table>
