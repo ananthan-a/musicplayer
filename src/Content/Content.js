@@ -6,32 +6,32 @@ import FeaturedMusicComponent from './Components/FeaturedMusic';
 import FeaturedVideoComponent from './Components/FeaturedVideo';
 import PopularArtistsComponent from './Components/PopularArtists';
 import SearchMenuComponent from './Components/SearchMenu';
-
-const HomePageRight = styled.div`
-    background-color: ${(props) => props.theme.RightSide};
-    position: absolute;
-    left: 20.83%;
-    right: -0.07%;
-    top: 0%;
-    bottom: 11.56%;
-    box-shadow: ${(props) => props.theme.RightShadow};
-`;
+import {HomePageRight} from './Style/ContentStyled';
 
 export default function Content (props){
+
+    console.log("$ Content");
+    console.log("Width : ",props.ScreenWidth);
+    
+    const [SearchTerm, SetSearchTerm] = React.useState("");
+    
     function SetCurrentContent(){
         if(props.CurrentContent === "Videos"){
-            return(<FeaturedVideoComponent/>);
+            return(<FeaturedVideoComponent SearchTerm={SearchTerm} ScreenWidth={props.ScreenWidth}/>);
+        }
+        else if(props.CurrentContent === "Music"){
+            return(<FeaturedMusicComponent SetCurrentMusic={props.SetCurrentMusic} SearchTerm={SearchTerm} ScreenWidth={props.ScreenWidth}/>);
         }
         else{
-            return(<FeaturedMusicComponent SetCurrentMusic={props.SetCurrentMusic}/>);
+            return(<div>Not finished</div>);
         }
     }
 
     return(
         <HomePageRight>
-            <div className="TopMenu"><SearchMenuComponent SetCurrentTheme={props.SetCurrentTheme} Theme={props.Theme}/></div>
+            <div className="TopMenu"><SearchMenuComponent SetCurrentTheme={props.SetCurrentTheme} Theme={props.Theme} SetSearchTerm={SetSearchTerm}/></div>
             <div className="FeaturedVideos"><SetCurrentContent/></div>
-            <div className="PopularArtists"><PopularArtistsComponent/></div>
+            <div className="PopularArtists"><PopularArtistsComponent ScreenWidth={props.ScreenWidth}/></div>
         </HomePageRight>
     );
 }

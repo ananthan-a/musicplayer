@@ -1,11 +1,11 @@
-import styled, { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from "styled-components";
 
 export const lightTheme = {
   body: "#fff",
   fontColor: "#000",
   RightSide: "#F7F8FA",
   LeftSide: "#EFF0F5",
-  LeftSideText: "#121B25",
+  TextColor: "#121B25",
   Footer: "#F9FAFC",
   RightShadow: "0px 0px 60px rgba(62, 85, 103, 0.1)",
   FooterShadow: "0px 0px 60px rgba(62, 85, 103, 0.1);"
@@ -16,7 +16,7 @@ export const darkTheme = {
   fontColor: "#fff",
   RightSide: "#0E121A",
   LeftSide: "#181C25",
-  LeftSideText: "#ffffff",
+  TextColor: "#ffffff",
   Footer: "#202530",
   RightShadow: "0px 0px 60px rgba(0, 0, 0, 0.2)",
   FooterShadow: "0px 0px 60px rgba(0, 0, 0, 0.2)"

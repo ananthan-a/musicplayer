@@ -1,46 +1,24 @@
-import React, { useState, useRef, useEffect } from 'react'
+import React, { useState, useRef } from 'react'
 import AlbumIconDark from './Sources/Icons/AlbumIconDark.png';
 import SeparatorIconDark from './Sources/Icons/SeparatorIconDark.png';
-import PreviousIconDark from './Sources/Icons/PreviousIconDark.png';
-import PlayIconDark from './Sources/Icons/PlayIconDark.png';
-import PauseIconDark from './Sources/Icons/PauseIconDark.png';
-import NextIconDark from './Sources/Icons/NextIconDark.png';
+import PreviousIcon from './Sources/Icons/PreviousIcon.png';
+import PlayIcon from './Sources/Icons/PlayIcon.png';
+import PauseIcon from './Sources/Icons/PauseIcon.png';
+import NextIcon from './Sources/Icons/NextIcon.png';
 import AddSongIconDark from './Sources/Icons/AddSongIconDark.png';
 import ShuffleIconDark from './Sources/Icons/ShuffleIconDark.png';
 import SoundIconDark from './Sources/Icons/SoundIconDark.png';
 import AlbumIconLight from './Sources/Icons/AlbumIconLight.png';
 import SeparatorIconLight from './Sources/Icons/SeparatorIconLight.png';
-import PreviousIconLight from './Sources/Icons/PreviousIconLight.png';
-import PlayIconLight from './Sources/Icons/PlayIconLight.png';
-import PauseIconLight from './Sources/Icons/PauseIconLight.png';
-import NextIconLight from './Sources/Icons/NextIconLight.png';
 import AddSongIconLight from './Sources/Icons/AddSongIconLight.png';
 import ShuffleIconLight from './Sources/Icons/ShuffleIconLight.png';
 import SoundIconLight from './Sources/Icons/SoundIconLight.png';
 import             './Style/SongPlayer.css';
-import styled from 'styled-components';
 import Slider from './components/slider/Slider';
 import data from   '../Additional/data.json';
+import { TextStyled } from '../Styled/CommonStyled';
+import { Player } from './Style/SongPlayerStyled';
 
-const Player = styled.div`
-    background-color: ${(props) => props.theme.Footer};
-    position: absolute;
-    left: 0%;
-    right: 0%;
-    top: 88.44%;
-    bottom: 0%;
-    box-shadow: ${(props) => props.theme.FooterShadow};
-`;
-
-const ThemeText = styled.div`
-    font-family: Poppins, sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 26px;
-    letter-spacing: -0.3px;
-    color: ${(props) => props.theme.LeftSideText};
-`;
 
 export default function SongPlayer (arg){
 
@@ -75,22 +53,26 @@ export default function SongPlayer (arg){
     }
 
     const play = (data) => {
-        console.log("data",data);
-        const audio = audioRef.current;
-        audio.volume = 1;
+        if(arg.CurrentMusic.Link != undefined){
+            const audio = audioRef.current;
+            audio.volume = 1;
 
-        if(data === "play"){
-            setIsPlaying(true)
-            audio.play()
-        }else {
-            if (!isPlaying) {
+            if(data === "play"){
                 setIsPlaying(true)
                 audio.play()
+            }else {
+                if (!isPlaying) {
+                    setIsPlaying(true)
+                    audio.play()
+                }
+                if (isPlaying) {
+                    setIsPlaying(false)
+                    audio.pause()
+                }
             }
-            if (isPlaying) {
-                setIsPlaying(false)
-                audio.pause()
-            }
+        }
+        else{
+            alert("Select song first")
         }
     }
 
@@ -128,39 +110,82 @@ export default function SongPlayer (arg){
         }
     }
 
+    if(arg.ScreenWidth > 600){
     return(
         <Player>
-            <table className="FooterTable">
+            <audio
+                autoPlay={true}
+                ref={audioRef}
+                onTimeUpdate={getCurrDuration}
+                onLoadedData={(e) => { 
+                    console.log("audio....................................",arg.CurrentMusic)
+                    play("play")
+                    setDuration(e.currentTarget.duration.toFixed(2))
+                }}
+                src={arg.CurrentMusic.Link}
+            />
+            <table className="FooterTable"><tbody>
                 <tr>
-                    <audio
-                        autoPlay="true"
-                        ref={audioRef}
-                        onTimeUpdate={getCurrDuration}
-                        onLoadedData={(e) => { 
-                            console.log("audio....................................",arg.CurrentMusic)
-                            play("play")
-                            setDuration(e.currentTarget.duration.toFixed(2))
-                        }}
-                        src={arg.CurrentMusic.Link}
-                    />
-                    <td className="FooterTableIconAlbum"><img src={arg.CurrentMusic.img ? arg.CurrentMusic.img : (arg.Theme==="dark" ? AlbumIconDark : AlbumIconLight)} className={isPlaying ? "FooterAlbumIconPlaying" : "FooterAlbumIconNotPlaying"}/></td>
+                    <td className="FooterTableIconAlbum"><img src={arg.CurrentMusic.img ? arg.CurrentMusic.img : (arg.Theme==="dark" ? AlbumIconDark : AlbumIconLight)} className={isPlaying ? "FooterAlbumIconPlaying" : "FooterAlbumIconNotPlaying"} alt="AlbumIcon"/></td>
                     <td className="FooterTableMusicName">
-                        <ThemeText>{arg.CurrentMusic === "No Music" ? "No Music" : arg.CurrentMusic.Name}</ThemeText>
+                        <TextStyled>{arg.CurrentMusic === "No Music" ? "No Music" : arg.CurrentMusic.Name}</TextStyled>
                         <div className="FooterSongDiscription">{arg.CurrentMusic === "No Music" ? "No Discription" : arg.CurrentMusic.Discription}</div>
                     </td>
-                    <td className="FooterTableIcon"><img src={arg.Theme==="dark" ? SeparatorIconDark : SeparatorIconLight} className="FooterLeftIcon"/></td>
-                    <td className="FooterTableIcon"><img src={arg.Theme==="dark" ? PreviousIconDark : PreviousIconLight} className="FooterLeftIcon" onClick={PreviousSong}/></td>
-                    <td className="FooterTableIcon"><img src={arg.Theme==="dark" ? (isPlaying ? PauseIconDark : PlayIconDark) : (isPlaying ? PauseIconLight : PlayIconLight)} onClick={play} className="FooterLeftIcon"/></td>
-                    <td className="FooterTableIcon"><img src={arg.Theme==="dark" ? NextIconDark : NextIconLight} className="FooterLeftIcon" onClick={NextSong}/></td>
+                    <td className="FooterTableIcon"><img src={arg.Theme==="dark" ? SeparatorIconDark : SeparatorIconLight} className="FooterLeftIcon" alt="SeparateIcon"/></td>
+                    <td className="FooterTableIcon"><img src={PreviousIcon} className="FooterLeftIcon" onClick={PreviousSong} alt="PreviousIcon"/></td>
+                    <td className="FooterTableIcon"><img src={isPlaying ? PauseIcon : PlayIcon} onClick={play} className="FooterLeftIcon" alt="PlayIcon"/></td>
+                    <td className="FooterTableIcon"><img src={NextIcon} className="FooterLeftIcon" onClick={NextSong} alt="NextIcon"/></td>
+                    <td className="FooterTableTime"><TextStyled>{secondsToHms(currentTime)}</TextStyled></td>
+                    <td className="FooterTableSlider"><Slider percentage={percentage} onChange={onChange} /></td>
+                    <td className="FooterTableTime"><TextStyled>{secondsToHms(duration)}</TextStyled></td>
+                    <td className="FooterTableIcon"><img src={arg.Theme==="dark" ? AddSongIconDark : AddSongIconLight} className="FooterRightIcon" alt="AddSong"/></td>
+                    <td className="FooterTableIcon"><img src={arg.Theme==="dark" ? ShuffleIconDark : ShuffleIconLight} className="FooterRightIcon" alt="ShuffleIcon"/></td>
+                    <td className="FooterTableIcon"><img src={arg.Theme==="dark" ? SoundIconDark : SoundIconLight} className="FooterRightIcon" alt="SoundIcon"/></td>
+                </tr>
+            </tbody></table>
+        </Player>
+    );
+    }
+    else{
+        return(
+            <Player>
+            <audio
+                autoPlay={true}
+                ref={audioRef}
+                onTimeUpdate={getCurrDuration}
+                onLoadedData={(e) => { 
+                    console.log("audio....................................",arg.CurrentMusic)
+                    play("play")
+                    setDuration(e.currentTarget.duration.toFixed(2))
+                }}
+                src={arg.CurrentMusic.Link}
+            />
+            <table className="FooterTableReturnSmallSlider"><tbody>
+                <tr>
                     <td className="FooterTableTime">{secondsToHms(currentTime)}</td>
                     <td className="FooterTableSlider"><Slider percentage={percentage} onChange={onChange} /></td>
                     <td className="FooterTableTime">{secondsToHms(duration)}</td>
-                    <td className="FooterTableIcon"><img src={arg.Theme==="dark" ? AddSongIconDark : AddSongIconLight} className="FooterRightIcon"/></td>
-                    <td className="FooterTableIcon"><img src={arg.Theme==="dark" ? ShuffleIconDark : ShuffleIconLight} className="FooterRightIcon"/></td>
-                    <td className="FooterTableIcon"><img src={arg.Theme==="dark" ? SoundIconDark : SoundIconLight} className="FooterRightIcon" /></td>
                 </tr>
-            </table>
+            </tbody></table>
+            <table className="FooterTableReturnSmall"><tbody>
+                <tr>
+                    <td className="FooterTableMusicName">
+                        <TextStyled>{arg.CurrentMusic === "No Music" ? "No Music" : arg.CurrentMusic.Name}</TextStyled>
+                        <div className="FooterSongDiscription">{arg.CurrentMusic === "No Music" ? "No Discription" : arg.CurrentMusic.Discription}</div>
+                    </td>
+                    <td className="FooterTableIcon"><img src={arg.Theme==="dark" ? SeparatorIconDark : SeparatorIconLight} className="FooterLeftIcon" alt="SeparateIcon"/></td>
+                    <td className="FooterTableIcon"><img src={PreviousIcon} className="FooterLeftIcon" onClick={PreviousSong} alt="PreviousIcon"/></td>
+                    <td className="FooterTableIcon"><img src={isPlaying ? PauseIcon : PlayIcon} onClick={play} className="FooterLeftIcon" alt="PlayIcon"/></td>
+                    <td className="FooterTableIcon"><img src={NextIcon} className="FooterLeftIcon" onClick={NextSong} alt="NextIcon"/></td>
+                    
+                    <td className="FooterTableIcon"><img src={arg.Theme==="dark" ? AddSongIconDark : AddSongIconLight} className="FooterRightIcon" alt="AddSong"/></td>
+                    <td className="FooterTableIcon"><img src={arg.Theme==="dark" ? ShuffleIconDark : ShuffleIconLight} className="FooterRightIcon" alt="ShuffleIcon"/></td>
+                    <td className="FooterTableIcon"><img src={arg.Theme==="dark" ? SoundIconDark : SoundIconLight} className="FooterRightIcon" alt="SoundIcon"/></td>
+                </tr>
+            </tbody></table>
         </Player>
-    );
+        )
+    }
     
 }
+

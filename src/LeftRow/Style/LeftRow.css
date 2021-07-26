@@ -6,12 +6,14 @@
     bottom: 85.23%;
 }
 .LogoIcon{
-    width: 60px;
-    float: left;
+    width: 50px;
+    min-width: 40px;
+    max-width: 70px;
+    margin: auto;
 }
 .LogoText{
-    float: left;
-    padding-left: 10px;
+    padding: 7px;
+    margin: auto;
 }
 .AppUiKit{
     font-family: Poppins;
@@ -21,20 +23,6 @@
     line-height: 23px;
     letter-spacing: -0.3px;
     color: #596675;
-}
-.LeftMenu{
-    position: absolute;
-    left: 13.37%;
-    right: 0.33%;
-    top: 19.60%;
-    bottom: 9.60%;
-    overflow: auto;
-}
-.LeftMenu::-webkit-scrollbar {
-    display: none;
-}
-.LeftMenuTable{
-    width: 90%;
 }
 .LeftSideText{
     /*position: absolute;*/
@@ -63,15 +51,97 @@
     padding-bottom: 5px;
     padding-left: 10px;
 }
-.LeftSideIcon{
-    height: auto;
-    width: 25px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
+
 .LeftSideIconRight{
     width: 20px;
     opacity: 70%;
     margin-left: auto;
     margin-right: auto;
 }
+.SelectedIconTR:hover{
+    cursor: pointer;
+}
+.SelectedIconDIV:hover{
+    color: #FF02D0 !important;
+}
+
+.LeftMenu{
+    position: absolute;
+    left: 13.37%;
+    right: 0.33%;
+    top: 19.60%;
+    bottom: 9.60%;
+    overflow: auto;
+}
+.LeftMenu::-webkit-scrollbar {
+    display: none;
+}
+.LeftMenuTable{
+    width: 100%;
+    border-spacing: 0px 5px;
+}
+.LeftMenuTableImage{
+    width: 15%;
+    min-width: 17px;
+}
+.LeftMenuTableText{
+    width: 75%;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 23px;
+    letter-spacing: -0.3px;
+    min-width:max-content;
+    padding-left: 10px;
+}
+.LeftMenuTableTextPinkColor{
+    width: 75%;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 23px;
+    letter-spacing: -0.3px;
+    min-width:max-content;
+    padding-left: 10px;
+    color: #FF02D0;
+}
+.LeftMenuTableImageAdditional{
+    width: 10%;
+    min-width: 12px;
+}
+.LeftMenuTableRight{
+    min-width: 1px;
+}
+.LeftMenuTableRightPinkColor{
+    min-width: 1px;
+    max-width: 1px;
+    width: 1px;
+    background-color: #FF02D0;
+}
+.LeftMenuTableIcon{
+    height: 20px;
+    width: 20px;
+    padding-bottom: 4px;
+    padding-top: 4px;
+}
+.LeftMenuTableOnMouseOver{
+    border-spacing: 0px 10px;
+}
+.LeftMenuTableOnMouseOver:hover{
+    cursor: pointer;
+}
+.LeftMenuPlayLists{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 23px;
+    letter-spacing: -0.3px;
+    color: #596675;
+    padding-left: 10px;
+}
+/* th,tr,td,table{
+    border: rgb(0, 0, 0) solid 1px;
+} */

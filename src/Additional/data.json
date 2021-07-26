@@ -1,51 +1,123 @@
 {
   "FeaturedVideos": [
     {
+      "id" : "1",
+      "Name" : "Jim Yosef & Anna Yvette",
+      "Discription" : "Courage [NCS Release]",
+      "YTLink" : "https://www.youtube.com/watch?v=ysz5S6PUM-U"
+    },
+    {
+      "id" : "2",
+      "Name" : "Tobu",
+      "Discription" : "Floating (Krewella's Alive vocal) [NCS Fanmade]",
+      "YTLink" : "https://www.youtube.com/watch?v=7-Kbj5Aj1zQ"
+    },
+    {
+      "id" : "3",
+      "Name" : "Elektronomia X Alan Walker",
+      "Discription" : "Fire ~ Spectre (MASHUP By BlazingKing)",
+      "YTLink" : "https://www.youtube.com/watch?v=ysz5S6PUM-U"
+    },
+    {
+      "id" : "4",
+      "Name" : "Jim Yosef",
+      "Discription" : "Link [NCS Release]",
+      "YTLink" : "https://www.youtube.com/watch?v=ysz5S6PUM-U"
+    },
+    {
+      "id" : "5",
+      "Name" : "Lost Sky",
+      "Discription" : "Fearless Pt.2 *SLOWED AND BASS BOOSTED*",
+      "YTLink" : "https://www.youtube.com/watch?v=ysz5S6PUM-U"
+    },
+    {
+      "id" : "6",
+      "Name" : "Lostboy & Slashtaq",
+      "Discription" : "Elysium [NCS Release]",
+      "YTLink" : "https://www.youtube.com/watch?v=ysz5S6PUM-U"
+    },
+    {
+      "id" : "7",
+      "Name" : "Illenium",
+      "Discription" : "Fractures (feat. Nevve)",
+      "YTLink" : "https://www.youtube.com/watch?v=ysz5S6PUM-U"
+    },
+    {
+      "id" : "8",
+      "Name" : "Illenium",
+      "Discription" : "Reverie (feat. King Deco)",
+      "YTLink" : "https://www.youtube.com/watch?v=ysz5S6PUM-U"
+    },
+    {
+      "id" : "9",
+      "Name" : "Illenium",
+      "Discription" : "Fractures (feat. Nevve) (Trivecta Remix)",
+      "YTLink" : "https://www.youtube.com/watch?v=ysz5S6PUM-U"
+    },
+    {
+      "id" : "10",
+      "Name" : "Illenium",
+      "Discription" : "Reverie (feat. King Deco)",
+      "YTLink" : "https://www.youtube.com/watch?v=ysz5S6PUM-U"
+    }
+  ],
+  "FeaturedVideos1": [
+    {
+      "id" : "1",
       "Name" : "Jim Yosef & Anna Yvette",
       "Discription" : "Courage [NCS Release]",
       "YTLink" : "https://www.youtube.com/watch?v=QmzWdrvFKdM&list=PLztdDPUXLHxunWjAr3HcRkguE_V8DqTLD?showinfo=0&enablejsapi=1&origin=http://localhost:9000"
     },
     {
+      "id" : "2",
       "Name" : "Tobu",
       "Discription" : "Floating (Krewella's Alive vocal) [NCS Fanmade]",
       "YTLink" : "https://www.youtube.com/watch?v=7-Kbj5Aj1zQ?showinfo=0&enablejsapi=1&origin=http://localhost:9000'"
     },
     {
+      "id" : "3",
       "Name" : "Elektronomia X Alan Walker",
       "Discription" : "Fire ~ Spectre (MASHUP By BlazingKing)",
       "YTLink" : "https://www.youtube.com/watch?v=5qLhpT4ls7w?showinfo=0&enablejsapi=1&origin=http://localhost:9000"
     },
     {
+      "id" : "4",
       "Name" : "Jim Yosef",
       "Discription" : "Link [NCS Release]",
       "YTLink" : "https://www.youtube.com/watch?v=9iHM6X6uUH8?showinfo=0&enablejsapi=1&origin=http://localhost:9000"
     },
     {
+      "id" : "5",
       "Name" : "Lost Sky",
       "Discription" : "Fearless Pt.2 *SLOWED AND BASS BOOSTED*",
       "YTLink" : "https://www.youtube.com/watch?v=IhBiymSD6w0?showinfo=0&enablejsapi=1&origin=http://localhost:9000"
     },
     {
+      "id" : "6",
       "Name" : "Lostboy & Slashtaq",
       "Discription" : "Elysium [NCS Release]",
       "YTLink" : "https://www.youtube.com/watch?v=QmzWdrvFKdM&list=PLztdDPUXLHxunWjAr3HcRkguE_V8DqTLD?showinfo=0&enablejsapi=1&origin=http://localhost:9000"
     },
     {
+      "id" : "7",
       "Name" : "Illenium",
       "Discription" : "Fractures (feat. Nevve)",
       "YTLink" : "https://www.youtube.com/watch?v=ZCu2gwLj9ok&list=PLztdDPUXLHxunWjAr3HcRkguE_V8DqTLD?showinfo=0&enablejsapi=1&origin=http://localhost:9000"
     },
     {
+      "id" : "8",
       "Name" : "Illenium",
       "Discription" : "Reverie (feat. King Deco)",
       "YTLink" : "https://www.youtube.com/watch?v=tjg3-Wla3PU&list=PLztdDPUXLHxunWjAr3HcRkguE_V8DqTLD?showinfo=0&enablejsapi=1&origin=http://localhost:9000"
     },
     {
+      "id" : "9",
       "Name" : "Illenium",
       "Discription" : "Fractures (feat. Nevve) (Trivecta Remix)",
       "YTLink" : "https://www.youtube.com/watch?v=R8_dpn5C-Jg&list=PLztdDPUXLHxunWjAr3HcRkguE_V8DqTLD?showinfo=0&enablejsapi=1&origin=http://localhost:9000"
     },
     {
+      "id" : "10",
       "Name" : "Illenium",
       "Discription" : "Reverie (feat. King Deco)",
       "YTLink" : "https://www.youtube.com/watch?v=tjg3-Wla3PU&list=PLztdDPUXLHxunWjAr3HcRkguE_V8DqTLD?showinfo=0&enablejsapi=1&origin=http://localhost:9000"
@@ -135,81 +207,155 @@
   ],
   "PopularArtists": [
     {
-      "Name": "A. R. Rahman",
-      "Followers": "10k"
-    },
-    {
-      "Name": "Shreya Ghoshal",
-      "Followers": "20k"
-    },
-    {
-      "Name": "Udit Narayan",
-      "Followers": "30k"
-    },
-    {
-      "Name": "Kumar Sanu",
-      "Followers": "40k"
-    },
-    {
-      "Name": "Devi Sri Prasad",
-      "Followers": "50k"
-    },
-    {
-      "Name": "Sonu Nigam",
-      "Followers": "60k"
-    },
-    {
-      "Name": "Anirudh Ravichander",
-      "Followers": "70k"
-    },
-    {
-      "Name": "S. P. Balasubrahmanyam",
-      "Followers": "80k"
-    },
-    {
-      "Name": "Priyanka",
-      "Followers": "90k"
-    },
-    {
-      "Name": "M. Srisha",
-      "Followers": "1M"
-    },
-    {
+      "id" : "1",
       "Name": "A. R. Rahman",
       "Followers": "10k",
-      "Icon": "./Icon/PopularAlbumIcon.png"
+      "Link" : "Sources/Images/PopularArtists/A. R. Rahman.jpg"
     },
     {
+      "id" : "2",
       "Name": "Shreya Ghoshal",
-      "Followers": "20k"
+      "Followers": "20k",
+      "Link" : "Sources/Images/PopularArtists/Shreya Ghoshal.jpg"
     },
     {
+      "id" : "3",
       "Name": "Udit Narayan",
-      "Followers": "30k"
+      "Followers": "30k",
+      "Link" : "Sources/Images/PopularArtists/Udit Narayan.jpg"
     },
     {
+      "id" : "4",
       "Name": "Kumar Sanu",
-      "Followers": "40k"
+      "Followers": "40k",
+      "Link" : "Sources/Images/PopularArtists/Kumar Sanu.jpg"
     },
     {
+      "id" : "5",
       "Name": "Devi Sri Prasad",
-      "Followers": "50k"
+      "Followers": "50k",
+      "Link" : "Sources/Images/PopularArtists/Devi Sri Prasad.jpg"
     },
     {
+      "id" : "6",
       "Name": "Sonu Nigam",
-      "Followers": "60k"
+      "Followers": "60k",
+      "Link" : "Sources/Images/PopularArtists/Sonu Nigam.jpg"
     },
     {
+      "id" : "7",
       "Name": "Anirudh Ravichander",
-      "Followers": "70k"
+      "Followers": "70k",
+      "Link" : "Sources/Images/PopularArtists/Anirudh Ravichander.jpg"
     },
     {
-      "Name": "S. P. Balasubrahmanyam",
-      "Followers": "80k"
+      "id" : "8",
+      "Name": "S. P. Bala subrahmanyam",
+      "Followers": "80k",
+      "Link" : "Sources/Images/PopularArtists/S. P. Balasubrahmanyam.jpg"
     },
     {
+      "id" : "9",
       "Name": "Priyanka",
-      "Followers": "90k"
-    }  
-  ]   
+      "Followers": "90k",
+      "Link" : "Sources/Images/PopularArtists/Priyanka.jpg"
+    },
+    {
+      "id" : "10",
+      "Name": "M. Srisha",
+      "Followers": "1M",
+      "Link" : "Sources/Images/PopularArtists/M. Srisha.jpg"
+    } 
+  ],
+
+
+  "LeftMenu" : [
+    {
+      "id" : "1",
+      "Name" : "Podcasts",
+      "Light" : "Sources/Images/LeftMenu/PodcastsIconLight.png",
+      "Image" : {
+          "Light" : "Sources/Images/LeftMenu/PodcastsIconLight.png",
+          "Dark" : "Sources/Images/LeftMenu/PodcastsIconDark.png",
+          "Pink" : "Sources/Images/LeftMenu/PodcastsIconPink.png"
+        }
+    },
+    {
+      "id" : "2",
+      "Name" : "Music",
+      "Image" : {
+          "Light" : "Sources/Images/LeftMenu/MusicIconLight.png",
+          "Dark" : "Sources/Images/LeftMenu/MusicIconDark.png",
+          "Pink" : "Sources/Images/LeftMenu/MusicIconPink.png"
+        }
+    },
+    {
+      "id" : "3",
+      "Name" : "Videos",
+      "Image" : {
+          "Light" : "Sources/Images/LeftMenu/VideoIconLight.png",
+          "Dark" : "Sources/Images/LeftMenu/VideoIconDark.png",
+          "Pink" : "Sources/Images/LeftMenu/VideoIconPink.png"
+        }
+    },
+    {
+      "id" : "4",
+      "Name" : "Top Lists",
+      "Image" : {
+          "Light" : "Sources/Images/LeftMenu/TopListsIconLight.png",
+          "Dark" : "Sources/Images/LeftMenu/TopListsIconDark.png",
+          "Pink" : "Sources/Images/LeftMenu/TopListsIconPink.png"
+        }
+    },
+    {
+      "id" : "5",
+      "Name" : "Discovers",
+      "Image" : {
+          "Light" : "Sources/Images/LeftMenu/DiscoverIconLight.png",
+          "Dark" : "Sources/Images/LeftMenu/DiscoverIconDark.png",
+          "Pink" : "Sources/Images/LeftMenu/DiscoverIconPink.png"
+        }
+    },
+    {
+      "id" : "6",
+      "Name" : "Favourites",
+      "Image" : {
+          "Light" : "Sources/Images/LeftMenu/FavouritiesIconLight.png",
+          "Dark" : "Sources/Images/LeftMenu/FavouritiesIconDark.png",
+          "Pink" : "Sources/Images/LeftMenu/FavouritiesIconPink.png"
+        }
+    },
+    {
+      "id" : "7",
+      "Name" : "Messages",
+      "Image" : {
+          "Light" : "Sources/Images/LeftMenu/MessageIconLight.png",
+          "Dark" : "Sources/Images/LeftMenu/MessageIconDark.png",
+          "Pink" : "Sources/Images/LeftMenu/MessageIconPink.png"
+        }
+    },
+    {
+      "id" : "8",
+      "Name" : "Playlists",
+      "Image" : {
+          "Light" : "Sources/Images/LeftMenu/PlaylistsIconLight.png",
+          "Dark" : "Sources/Images/LeftMenu/PlaylistsIconDark.png",
+          "Pink" : "Sources/Images/LeftMenu/PlaylistsIconPink.png"
+        }
+    }
+  ],
+  "Playlists": [
+    {
+      "Name" : "Summer vibes"
+    },
+    {
+      "Name" : "Chill out"
+    },
+    {
+      "Name" : "Classic rock"
+    },
+    {
+      "Name" : "Kids Music"
+    }
+  ]
 }

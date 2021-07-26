@@ -9,22 +9,38 @@
     width: 100%;
 }
 .TopMenuTableIcon{
-    width: 5%;
+    width: 3%;
+}
+.TopMenuTableIcon:hover{
+    cursor: pointer;
 }
 .TopMenuTableSearch{
-    width: 80%;  
+    width: 88%;  
 }
 .TopMenuIcon{
     width: 20px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
 }
-.TopMenuSearch{
+.TopMenuSearchDark{
     width: 100%;
     border-radius: 20px;
     border-width: 0px;
     background-color:transparent;
+    color: #fff;
+}
+.TopMenuSearchDark:focus{
+    outline: none;
+    color: #fff;
+}
+.TopMenuSearchLight{
+    width: 100%;
+    border-radius: 20px;
+    border-width: 0px;
+    background-color:transparent;
+    color: #000;
+}
+.TopMenuSearchLight:focus{
+    outline: none;
+    color: #000;
 }
 .FeaturedVideos{
     position: absolute;
@@ -49,12 +65,14 @@
     font-size: 20px;
     line-height: 33px;
     letter-spacing: -0.375px;
-    padding-left: 20px;
 }
 .FeaturedVideosTableMore{
+    font-weight: bold;
     width: 20%;
     text-align: right;
-    padding-right: 20px;
+}
+.FeaturedVideosTableMore:hover{
+    cursor: pointer;
 }
 .VideoList{
     position: absolute;
@@ -65,21 +83,28 @@
     overflow-x: none;
     overflow-y: auto;
     display: grid;
-    grid-template-columns: auto auto;
 }
 .VideoList::-webkit-scrollbar {
     display: none;
 }
-.GridView{
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 12px;
-    margin-bottom: 12px;
-    min-width: 300px;
-    min-height: auto;
-    width: 85%;
+.HideScrollBar::-webkit-scrollbar {
+    display: none;
 }
-
+.GridView{
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-bottom: 0px;
+    min-width: 130px;
+    max-width: 350px;
+    min-height: auto;
+    width: 100%;
+}
+.GridView:hover{
+    cursor: pointer;
+}
+.GridViewTable{
+    width: 100%;
+}
 .VideoIcon{
     width: 10px;
 }
@@ -104,7 +129,7 @@
 }
 .PopularArtists{
     position: absolute;
-    left: 70.63%;
+    left: 70.20%;
     right: 4.38%;
     top: 14.77%;
     bottom: 7.01%;
@@ -122,7 +147,8 @@
     bottom: 0%;
     left: 0%;
     right: 0%;
-    overflow: auto;
+    overflow-x: hidden;
+    overflow-y: scroll;
 }
 .PopularArtists2::-webkit-scrollbar {
     display: none;
@@ -132,13 +158,11 @@
     height: auto;
 }
 .PopularArtistsTable1_1{
-    width: 60%;
-    height: 50px;
     font-family: Poppins;
     font-style: normal;
     font-weight: 600;
-    font-size: 20px;
-    line-height: 33px;
+    font-size: 18px;
+    line-height: 20px;
     letter-spacing: -0.375px;
 }
 .PopularArtistsTable1_2{
@@ -153,12 +177,27 @@
     letter-spacing: -0.3px;
     color: #596675;
 }
+.PopularArtistsTable1_2:hover{
+    cursor: pointer;
+}
 .PopularArtistsTable2{
     width: 100%;
+    border-spacing: 0px 10px;
 }
-.PopularArtistsTable2_1, .PopularArtistsTable2_3{
+.PopularArtistsTable2_1{
     width: 20%;
     text-align: center;
+}
+.PopularArtistsTable2_3{
+    text-align: center;
+    font-weight: bold;
+    min-width: 10px;
+    width: 5%;
+}
+.PopularArtistsTable2_3:hover{
+    cursor: pointer;
+    min-width: 10px;
+    width: 5%;
 }
 .PopularArtistsTable2_2{
     width: 60%;
@@ -167,17 +206,20 @@
     font-family: Poppins;
     padding-top: 10px;
     padding-bottom: 10px;
+    cursor: pointer;
 }
 .PopularArtistsTable2_1_Icon{
-    width: 45px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
 }
 .PopularArtistsTable2_2_1{
     font-style: normal;
     font-weight: 600;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 23px;
     letter-spacing: -0.2625px;
+    padding-left: 15px;
 }
 .PopularArtistsTable2_2_2{
     font-style: normal;
@@ -186,4 +228,12 @@
     line-height: 19px;
     letter-spacing: -0.257143px;
     color: #596675;
+    padding-left: 15px;
+}
+.ContentGridViewImage{
+    width: 100%;
+    height: auto;
+    border-radius: 7px;
+    max-width: 400px;
+    background-size: cover;
 }

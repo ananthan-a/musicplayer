@@ -1,11 +1,8 @@
 import React from 'react';
-import SearchIconDark from '../Sources/Icon/SearchIconDark.png';
-import SettingsIconDark from '../Sources/Icon/SettingsIconDark.png';
-import NotificationIconDark from '../Sources/Icon/NotificationIconDark.png';
+import SearchIcon from '../Sources/Icon/SearchIcon.png';
+import SettingsIcon from '../Sources/Icon/SettingsIcon.png';
+import NotificationIcon from '../Sources/Icon/NotificationIcon.png';
 import ModeIconDark from '../Sources/Icon/ModeIconDark.png';
-import SearchIconLight from '../Sources/Icon/SearchIconLight.png';
-import SettingsIconLight from '../Sources/Icon/SettingsIconLight.png';
-import NotificationIconLight from '../Sources/Icon/NotificationIconLight.png';
 import ModeIconLight from '../Sources/Icon/ModeIconLight.png';
 import '../Style/Content.css';
 
@@ -16,16 +13,16 @@ export default function SearchMenu(props){
     };
 
     return(
-        <table className="TopMenuTable">
+        <table className="TopMenuTable"><tbody>
             <tr>
-                <td className="TopMenuTableIcon"><img src={props.Theme==="dark" ? SearchIconDark : SearchIconLight} className="TopMenuIcon"/></td>
+                <td className="TopMenuTableIcon"><img src={SearchIcon} className="TopMenuIcon" alt="SearchIcon"/></td>
                 <td className="TopMenuTableSearch">
-                    <input className="TopMenuSearch" type="input" placeholder="Search for artists, songs & albums..."></input>
+                    <input className={props.Theme === "dark" ? "TopMenuSearchDark" : "TopMenuSearchLight"} type="search" placeholder="Search for artists, songs & albums..." onChange={e => {props.SetSearchTerm(e.target.value)}}/>
                 </td>
-                <td className="TopMenuTableIcon"><img src={props.Theme==="dark" ? SettingsIconDark : SettingsIconLight} className="TopMenuIcon"/></td>
-                <td className="TopMenuTableIcon"><img src={props.Theme==="dark" ? NotificationIconDark : NotificationIconLight} className="TopMenuIcon"/></td>
-                <td className="TopMenuTableIcon"><img src={props.Theme==="dark" ? ModeIconDark : ModeIconLight} className="TopMenuIcon" onClick={() => themeToggler()}/></td>
+                <td className="TopMenuTableIcon"><img src={SettingsIcon} className="TopMenuIcon" alt="SettingIcon"/></td>
+                <td className="TopMenuTableIcon"><img src={NotificationIcon} className="TopMenuIcon" alt="NotificationIcon"/></td>
+                <td className="TopMenuTableIcon"><img src={props.Theme==="dark" ? ModeIconDark : ModeIconLight} className="TopMenuIcon" onClick={() => themeToggler()} alt="ModeIcon"/></td>
             </tr>
-        </table>
+        </tbody></table>
     );
 }

@@ -1,11 +1,21 @@
 .FooterTable{
+    position: absolute;
     width: 100%;
+    height: 100%;
+}
+.FooterTableReturnSmallSlider{
+    height: 10%;
+}
+.FooterTableReturnSmall{
+    width: 100%;
+    height: 77%;
 }
 .FooterTableIcon{
     width: 5%;
+    min-width: 12px;
 }
 .FooterTableIconAlbum{
-    width: 7%;
+    width: 6%;
 }
 .FooterTableMusicName{
     width: 10%;
@@ -15,7 +25,7 @@
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
-    line-height: 23px;
+    line-height: 13px;
     letter-spacing: -0.3px;
     color: #596675;
 }
@@ -28,40 +38,37 @@
     width: 1%;
 }
 .FooterLeftIcon{
-    width: 45px;
-    opacity: 0.7;
-    display: block;
-    margin: auto auto;
+    width: 17px;
+    display: flex;
+    margin: auto;
 }
 .FooterLeftIconNEW{
     width: 45px;
-    opacity: 0.7;
     display: block;
     margin: auto auto;
 }
 .FooterRightIcon{
-    width: 23px;
-    opacity: 0.7;
+    width: 20px;
     display: block;
-    margin: auto auto;
+    margin: auto;
 }
 .FooterAlbumIconPlaying{
-    width:70px;
-    height:70px;
+    width:65px;
+    height:65px;
     object-fit:cover;
     border-radius: 50%;
-    margin-left: 15px;
+    margin-left: 10px;
     animation: mymove 5s infinite;
 }
 @keyframes mymove {
     100% {transform: rotate(360deg);}
   }
 .FooterAlbumIconNotPlaying{
-    width:70px;
-    height:70px;
+    width:65px;
+    height:65px;
     object-fit:cover;
     border-radius: 50%;
-    margin-left: 15px;
+    margin-left: 10px;
 }
 .FooterTableTime{
     width: 5%;
@@ -69,15 +76,11 @@
 }
 .RangeInput{
     width: 100%;
-    
 }
 .FooterTablePlayer{
     width: 63%;
     background-color: rosybrown;
 }
-
-
-
 .app-container {
     width: 100%;
     padding: 10 10px;
